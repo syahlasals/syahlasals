@@ -53,59 +53,132 @@ document.querySelectorAll(".explorer-row").forEach((row) => {
 const PROJECTS = {
   bibliobit: {
     title: "BiblioBit",
-    desc: "Aplikasi Android pencatat buku dengan statistik membaca dan pemindaian barcode ISBN.",
-    role: "Mobile + backend developer",
-    stack: "Kotlin, Jetpack Compose, Laravel, PostgreSQL, Firebase Auth",
-    highlights: "Manajemen buku, statistik membaca, pemindaian ISBN, integrasi REST API",
+    images: [
+      "assets/images/BiblioBit.png"
+    ],
+    desc: "Android book-tracking app with reading statistics and ISBN barcode scanning.",
+    role: "Fullstack Developer",
+    stack: ["Kotlin", "Jetpack Compose", "Laravel", "PostgreSQL", "Firebase Auth", "Postman"],
+    highlights: "Book management, reading stats, ISBN scanning, REST API integration",
+    links: [
+      {
+        label: "Android Repository",
+        url: "https://github.com/elsasinaga/Proyek4_BiblioBit"
+      },
+      {
+        label: "Laravel Repository",
+        url: "https://github.com/iisyanap/be-bibliobit"
+      },
+      {
+        label: "Figma Design",
+        url: "https://www.figma.com/design/AoW74YvSnSPqklxrbQkzTj/BiblioBit?node-id=0-1&t=FmsqBdD2WU0GOg8c-1"
+      }
+    ]
   },
   submeet: {
-    title: "Topic_Relevance_Detector",
-    desc: "Layanan deteksi relevansi topik yang terintegrasi ke CMS SubMeet.",
+    title: "SubMeet - Topic Relevance Detector",
+    images: [
+      "assets/images/CMS-SubMeet.png"
+    ],
+    desc: "Topic relevance detection service integrated into the SubMeet CMS.",
     role: "Backend developer",
-    stack: "FastAPI, Python, Laravel (CMS), REST API",
-    highlights: "Service inferensi mandiri yang dikonsumsi oleh CMS Laravel yang sudah ada",
+    stack: ["FastAPI"],
+    highlights: "Standalone inference service consumed by an existing Laravel CMS",
+    links: [
+      {
+        label: "Repository",
+        url: "https://github.com/syahlasals/submeet-topic-relevance-detector"
+      }
+    ]
   },
   accsys: {
-    title: "accsys",
-    desc: "Aplikasi akuntansi dengan logika backend dan integrasi database yang terstruktur.",
+    title: "AccSys",
+    images: [
+      "assets/images/Accsys.png"
+    ],
+    desc: "Accounting application with structured backend logic and database integration.",
     role: "Backend developer",
-    stack: "Flask, Supabase",
-    highlights: "Logika akuntansi, pemodelan data, integrasi Supabase",
+    stack: ["Flask", "Supabase"],
+    highlights: "Accounting logic, data modeling, Supabase integration",
+    links: [
+      {
+        label: "Repository",
+        url: "https://github.com/iisyanap/akuntansi-kelompok4"
+      }
+    ]
   },
   ormawa: {
-    title: "Pengajuan_Ketua_ORMAWA",
-    desc: "Sistem submission untuk alur kerja organisasi mahasiswa dengan notifikasi.",
+    title: "Pengajuan Ketua ORMAWA",
+    images: [
+      "assets/images/Pengajuan-Ketua-ORMAWA.png",
+      "assets/images/Pengajuan-Ketua-ORMAWA-2.png",
+      "assets/images/Pengajuan-Ketua-ORMAWA-3.png"
+    ],
+    desc: "Submission system for student-organization workflows with notifications.",
     role: "Fullstack developer",
-    stack: "Laravel, PostgreSQL",
-    highlights: "Workflow automation, notifikasi, relasi data, functional testing",
+    stack: ["Laravel", "PostgreSQL"],
+    highlights: "Workflow automation, notifications, relational data modeling, functional testing",
+    links: []
   },
   famroots: {
     title: "FamRoots",
-    desc: "Simulasi warisan keluarga yang mengeksplorasi struktur data rekursif.",
+    images: [
+      "assets/images/FamRoots.png"
+    ],
+    desc: "Family inheritance simulation exploring recursive data structures.",
     role: "Developer",
-    stack: "Linked list, non-binary tree, rekursi",
-    highlights: "Pencarian, penyisipan, penghapusan, dan manajemen data dinamis",
+    stack: ["Linked lists", "Non-binary trees", "Recursion"],
+    highlights: "Search, insertion, deletion, and dynamic data management",
+    links: [
+      {
+        label: "Repository",
+        url: "https://github.com/syahlasals/FamRoots"
+      }
+    ]
   },
   driver_drowsiness: {
-    title: "Deteksi Kantuk",
-    desc: "Aplikasi untuk deteksi kantuk pengemudi.",
+    title: "Driver Drowsiness Detection",
+    images: [
+      "assets/images/Driver-Drowsiness.png"
+    ],
+    desc: "Computer-vision experiments in face similarity, ethnicity detection, and drowsiness detection.",
     role: "Developer",
-    stack: "Python, model inference, facial landmark processing",
-    highlights: "Deteksi kantuk pengemudi real-time dari pelacakan landmark wajah",
+    stack: ["Python", "model inference", "facial landmark processing"],
+    highlights: "Real-time driver drowsiness detection from landmark tracking",
+    links: []
   },
-  posyandu: {
+  posyanduku: {
     title: "PosyanduKu",
-    desc: "Sistem informasi untuk data dan operasional layanan kesehatan posyandu.",
+    images: [
+      "assets/images/Posyanduku-1.jpg",
+      "assets/images/Posyanduku-2.jpg",
+      "assets/images/Posyanduku-3.jpg"
+    ],
+    desc: "Information system for community health-post (posyandu) data and operations.",
     role: "Fullstack developer",
-    stack: "PHP Native, Laravel, MySQL",
-    highlights: "Pencatatan data layanan kesehatan untuk operasional komunitas",
+    stack: ["PHP Native", "Laravel", "MySQL"],
+    highlights: "Health-service data tracking for community operations",
+    links: []
   },
   pesenin: {
     title: "Pesenin",
-    desc: "Platform pemesanan cafe yang mendigitalisasi alur kerja operasional.",
+    images: [
+      "assets/images/Pesenin.png",
+    ],
+    desc: "Café ordering platform digitizing in-store and operational workflows.",
     role: "Software engineer intern",
-    stack: "Microservices, frontend HTML/CSS/JS",
-    highlights: "Analisis kebutuhan, pengujian API, delivery berbasis sprint",
+    stack: ["Microservices", "HTML/CSS/JS frontend", "PostgreSQL", "Docker", "n8n"],
+    highlights: "Requirement analysis, API testing, sprint-based delivery",
+    links: [
+      {
+        label: "Repository",
+        url: "https://github.com/InfinityCafe/InfinityCafe-Pesenin"
+      },
+      {
+        label: "Figma Design",
+        url: "https://www.figma.com/design/bHTrF3Fme2AE4lUXiANrci/Infinity-Cafe?node-id=0-1&t=ZQSnl3ACgJgv1cnm-1"
+      }
+    ]
   }
 };
 
@@ -114,20 +187,69 @@ const modalTitle = document.getElementById("modalTitle");
 const modalBody = document.getElementById("modalBody");
 const modalClose = document.getElementById("modalClose");
 
+// Carousel Images
+let currentProjectImages = [];
+let currentImageIndex = 0;
+
+function updateCarouselImage() {
+  const imgEl = document.getElementById("modalCarouselImage");
+  if (imgEl && currentProjectImages.length > 0) {
+    imgEl.src = currentProjectImages[currentImageIndex];
+  }
+}
+
 function openProjectModal(key) {
   const p = PROJECTS[key];
   if (!p) return;
-  modalTitle.textContent = `${p.title}.exe`;
+  modalTitle.textContent = `${p.title}`;
+
+  currentProjectImages = p.images || [];
+  currentImageIndex = 0;
+
+  let carouselHTML = '';
+  if (currentProjectImages.length > 0) {
+    const showArrows = currentProjectImages.length > 1;
+    carouselHTML = `
+      <div class="modal-carousel">
+        ${showArrows ? `<button class="carousel-btn prev" id="carouselPrev" aria-label="Previous image"><i class="fa-solid fa-angle-left"></i></button>` : ''}
+        <img src="${currentProjectImages[0]}" alt="${p.title}" id="modalCarouselImage" class="modal-image" loading="lazy">
+        ${showArrows ? `<button class="carousel-btn next" id="carouselNext" aria-label="Next image"><i class="fa-solid fa-angle-right"></i></button>` : ''}
+      </div>
+    `;
+  }
+
   modalBody.innerHTML = `
+    ${carouselHTML}
     <p class="modal-desc">${p.desc}</p>
+    <div class="modal-stack">
+      ${p.stack.map(tech => `<span class="tag">${tech}</span>`).join("")}
+    </div>
+
     <dl class="modal-fields">
-      <div><dt>role</dt><dd>${p.role}</dd></div>
-      <div><dt>stack</dt><dd>${p.stack}</dd></div>
-      <div><dt>highlights</dt><dd>${p.highlights}</dd></div>
+      <div><dt>Role</dt><dd>${p.role}</dd></div>
+      <div><dt>Highlights</dt><dd>${p.highlights}</dd></div>
+      ${p.links && p.links.length > 0 ? `<div><dt>Links</dt><dd>${p.links.map(link => `<a class="modal-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label}↗</a>`).join(", ")}</dd></div>` : ''}
     </dl>
+    <div class="modal-footer">
+      <a href="" class="btn btn-primary" style="font-size: 13px; padding: 6px 14px;">Open in File Viewer</a>
+    </div>
   `;
+
+  if (currentProjectImages.length > 1) {
+    document.getElementById("carouselPrev").addEventListener("click", () => {
+      currentImageIndex = (currentImageIndex - 1 + currentProjectImages.length) % currentProjectImages.length;
+      updateCarouselImage();
+    });
+
+    document.getElementById("carouselNext").addEventListener("click", () => {
+      currentImageIndex = (currentImageIndex + 1) % currentProjectImages.length;
+      updateCarouselImage();
+    });
+  }
+
   modalOverlay.classList.add("open");
 }
+
 
 function closeProjectModal() {
   modalOverlay.classList.remove("open");
@@ -145,7 +267,13 @@ document.addEventListener("keydown", (e) => {
 });
 
 const menubarButtons = document.querySelectorAll(".menubar-apps button");
-const sections = ["about", "experience", "projects", "education", "contact"]
+const sections = [
+  "about",
+  "experience",
+  "projects",
+  "education",
+  "certifications",
+  "contact"]
   .map((id) => document.getElementById(id))
   .filter(Boolean);
 

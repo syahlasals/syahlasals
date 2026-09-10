@@ -18,11 +18,11 @@
 <body>
 
   <!-- <div class="crt-overlay" aria-hidden="true"></div>
-<div class="wallpaper" aria-hidden="true">
-  <span class="orb orb-a"></span>
-  <span class="orb orb-b"></span>
-  <span class="orb orb-c"></span>
-</div> -->
+  <div class="wallpaper" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+  </div> -->
 
   <header class="menubar">
     <button class="start-btn" data-target="#top">
@@ -34,6 +34,7 @@
       <button data-target="#experience">Experience</button>
       <button data-target="#projects">Projects</button>
       <button data-target="#education">Education</button>
+      <button data-target="#certifications">Certifications</button>
       <button data-target="#contact">Contact</button>
     </div>
 
@@ -44,37 +45,66 @@
 
   <main id="top">
 
-    <section class="win win-hero" id="hero">
-      <div class="win-titlebar">
-        <span class="traffic"><i class="dot dot-red" data-action="minimize"></i><i class="dot dot-yellow"
-            data-action="minimize"></i><i class="dot dot-green"></i></span>
-        <span class="win-title">syahla_salsabila.exe</span>
-        <span class="win-title-spacer" aria-hidden="true"></span>
-      </div>
-      <div class="win-body hero-body">
-        <p class="hero-kicker">System ready — profile loaded</p>
-        <h1 class="hero-name">Syahla Salsabila</h1>
-        <p class="hero-role">Software Developer</p>
-        <p class="hero-lede">
-          Software Developer Software Developer with a strong curiosity and a passion for continuous learning.
-          Experienced in developing applications through both team, individual and internships projects. Currently
-          finishing a
-          Diploma 3 in Informatics Engineering, with a GPA of 3.40/4.00, at Politeknik Negeri Bandung.
-        </p>
-        <div class="hero-actions">
-          <button class="btn btn-primary" data-target="#projects">View Projects</button>
-          <a class="btn btn-outline" href="#" download>Download CV</a>
+    <section class="hero-screen" id="hero">
+      <div class="hero-window win">
+        <div class="win-titlebar">
+          <span class="traffic">
+            <i class="dot dot-red" data-action="minimize"></i>
+            <i class="dot dot-yellow" data-action="minimize"></i>
+            <i class="dot dot-green"></i>
+          </span>
+          <span class="win-title">syahla_salsabila.exe</span>
+          <span class="win-title-spacer" aria-hidden="true"></span>
         </div>
-        <div class="hero-chips">
-          <span class="chip"><i class="fa-solid fa-location-dot"></i>Cimahi, Indonesia</span>
-          <a class="chip" href="mailto:syahlasalsb@gmail.com"><i
-              class="fa-regular fa-envelope"></i>syahlasalsb@gmail.com</a>
-          <a class="chip" href="https://github.com/syahlasals" target="_blank" rel="noopener"><i
-              class="fa-brands fa-github"></i>syahlasals</a>
-          <a class="chip" href="https://linkedin.com/in/syahlasalsb" target="_blank" rel="noopener"><i
-              class="fa-brands fa-linkedin"></i>syahlasalsb</a>
+        <div class="win-body hero-body">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            SYSTEM READY
+          </div>
+          <p class="hero-kicker">Hello, I'm</p>
+          <h1 class="hero-name">
+            Syahla<br>
+            Salsabila<span class="hero-cursor">_</span>
+          </h1>
+          <p class="hero-role">
+            Software Developer
+          </p>
+          <p class="hero-lede">
+            Software Developer with a strong curiosity and a passion for
+            continuous learning. Experienced in building applications across
+            backend and frontend development, system analysis, testing, and UI/UX.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-target="#projects">
+              Explore My Work
+            </button>
+            <a class="btn btn-outline" href="#" download>Download CV</a>
+          </div>
+          <div class="hero-chips">
+            <span class="chip">
+              <i class="fa-solid fa-location-dot"></i>
+              Cimahi, Indonesia · Open to Relocate
+            </span>
+            <a class="chip" href="mailto:syahlasalsb@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+              syahlasalsb@gmail.com
+            </a>
+            <a class="chip" href="https://github.com/syahlasals" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+            <a class="chip" href="https://linkedin.com/in/syahlaslb" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
+
+      <button class="hero-scroll" data-target="#about" aria-label="Scroll to about">
+        <span>scroll to explore</span>
+        <span class="scroll-arrow">↓</span>
+      </button>
     </section>
 
     <section class="win" id="about">
@@ -136,6 +166,10 @@
       </div>
       <div class="win-body no-pad">
         <div class="explorer-head">
+          <span class="row-title">Work Experiences</span>
+        </div>
+
+        <div class="explorer-head">
           <span class="col-name">Name</span>
           <span class="col-when">Period</span>
           <span class="col-type">Type</span>
@@ -161,6 +195,8 @@
               requirements.</li>
             <li>Collaborated in an Agile Scrum environment through sprint planning, daily stand-ups, reviews, and
               retrospectives.</li>
+            <a class="link-ref" href="https://drive.google.com/file/d/1I9RwZG8D6sCfi73HERinVfZJx9QG4leU/view"
+              target="_blank" rel="noopener noreferrer">Certificate↗</a>
           </ul>
         </div>
 
@@ -180,9 +216,18 @@
               management and administrative processes.</li>
             <li>Implemented CRUD operations and database functionality, enabling structured management of school
               information.</li>
-            </li>
+            <a class="link-ref" href="https://drive.google.com/file/d/1VWhCDSHk3EqL9yEQNe9irXke8f32mlSr/view"
+              target="_blank" rel="noopener noreferrer">Certificate↗</a>
           </ul>
-          </ul>
+        </div>
+
+        <div class="explorer-head">
+          <span class="row-title">Organization Experiences</span>
+        </div>
+        <div class="explorer-head">
+          <span class="col-name">Name</span>
+          <span class="col-when">Period</span>
+          <span class="col-type">Type</span>
         </div>
 
         <div class="explorer-row" data-row>
@@ -224,11 +269,11 @@
           </button>
           <button class="folder" data-project="submeet">
             <span class="folder-glyph" aria-hidden="true">🗂️</span>
-            <span class="folder-name">Topic Relevance Detector</span>
+            <span class="folder-name">SubMeet - Topic Relevance Detector</span>
           </button>
           <button class="folder" data-project="accsys">
             <span class="folder-glyph" aria-hidden="true">🗂️</span>
-            <span class="folder-name">accsys</span>
+            <span class="folder-name">AccSys</span>
           </button>
           <button class="folder" data-project="ormawa">
             <span class="folder-glyph" aria-hidden="true">🗂️</span>
@@ -240,9 +285,9 @@
           </button>
           <button class="folder" data-project="driver_drowsiness">
             <span class="folder-glyph" aria-hidden="true">🗂️</span>
-            <span class="folder-name">Deteksi Kantuk</span>
+            <span class="folder-name">Driver Drowsiness Detection</span>
           </button>
-          <button class="folder" data-project="posyandu">
+          <button class="folder" data-project="posyanduku">
             <span class="folder-glyph" aria-hidden="true">🗂️</span>
             <span class="folder-name">PosyanduKu</span>
           </button>
@@ -276,7 +321,7 @@
               <span class="row-sub">Diploma, Teknik Informatika · GPA 3.40/4.00</span>
             </span>
             <span class="col-when">Aug 2023 – Aug 2026</span>
-            <span class="col-type">Diploma</span>
+            <span class="col-type">Diploma 3</span>
             <span class="row-chevron" aria-hidden="true">▸</span>
           </button>
           <!-- <ul class="row-detail">
@@ -302,6 +347,46 @@
       </div>
     </section>
 
+    <section class="win" id="certifications">
+      <div class="win-titlebar">
+        <span class="traffic"><i class="dot dot-red" data-action="minimize"></i><i class="dot dot-yellow"
+            data-action="minimize"></i><i class="dot dot-green"></i></span>
+        <span class="win-title">Certifications — File Explorer</span>
+        <span class="win-title-spacer" aria-hidden="true"></span>
+      </div>
+      <div class="win-body no-pad">
+        <div class="explorer-head">
+          <span class="col-name">Certification</span>
+          <span class="col-when">Issued</span>
+        </div>
+
+        <div class="explorer-row no-hover" data-row>
+          <div class="row-main">
+            <span class="row-icon" aria-hidden="true">📄</span>
+            <span class="col-name">
+              <span class="row-title">Software Quality Assurance Certification</span>
+              <span class="row-sub">Arutala Lab</span>
+              <a class="link-ref" href="https://drive.google.com/file/d/1Au5aZV3ICEmoaHuB9lWTYD8kLWFKHJ3K/view"
+                target="_blank" rel="noopener noreferrer">Certificate↗</a>
+            </span>
+            <span class="col-when">Jul 2020 – May 2023</span>
+          </div>
+        </div>
+        <div class="explorer-row no-hover" data-row>
+          <div class="row-main">
+            <span class="row-icon" aria-hidden="true">📄</span>
+            <span class="col-name">
+              <span class="row-title">Test of English for International Communication (TOEIC)</span>
+              <span class="row-sub">International Test Center (ITC)</span>
+              <a class="link-ref" href="https://drive.google.com/file/d/1BViMRLBmBZzQR3vEvJuzqj89RhrVq03p/view"
+                target="_blank" rel="noopener noreferrer">Certificate↗</a>
+            </span>
+            <span class="col-when">Mei 2026 - Mei 2028</span>
+          </div>
+        </div>
+
+    </section>
+
     <section class="win" id="contact">
       <div class="win-body">
         <p style="margin-top: 0; color: var(--text-muted); font-size: 14.5px; text-align: center;">Open to software
@@ -319,13 +404,12 @@
       </div>
     </section>
 
-    <div class="footer" id="footer">
+    <footer class="footer" id="footer">
       <div class="win-body">
         <p style="margin-top: 0; color: var(--text-muted); font-size: 14.5px; text-align: center;">© 2026 Syahla
           Salsabila. All rights reserved.</p>
-
       </div>
-    </div>
+    </footer>
 
   </main>
 
