@@ -742,7 +742,8 @@ a {
 
 .folder-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
+  justify-content: center;
   gap: 8px;
 }
 
@@ -794,8 +795,7 @@ a {
 
 .modal-win {
   width: 100%;
-  /* max-width: 480px; */
-  max-width: 580px;
+  max-width: 640px;
   max-height: 90vh;
   display: flex;
   margin: 0;
@@ -1186,5 +1186,11 @@ a {
   .menubar {
     top: 8px;
     width: calc(100% - 16px);
+  }
+}
+
+@media (min-height: 900px) {
+  .hero-scroll {
+    bottom: 40px;
   }
 }

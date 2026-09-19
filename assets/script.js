@@ -54,11 +54,12 @@ const PROJECTS = {
   bibliobit: {
     title: "BiblioBit",
     images: [
-      "assets/images/BiblioBit.png"
+      "assets/images/BiblioBit.png",
+      "assets/images/BiblioBit-LandingPage.png",
     ],
     desc: "Android book-tracking app with reading statistics and ISBN barcode scanning.",
     role: "Fullstack Developer",
-    stack: ["Kotlin", "Jetpack Compose", "Laravel", "PostgreSQL", "Firebase Auth", "Postman"],
+    stack: ["Kotlin", "Jetpack Compose", "Laravel", "PostgreSQL", "Firebase Auth", "Postman", "Figma", "GitHub", "REST API", "Barcode Scanning"],
     highlights: "Book management, reading stats, ISBN scanning, REST API integration",
     links: [
       {
@@ -78,11 +79,12 @@ const PROJECTS = {
   submeet: {
     title: "SubMeet - Topic Relevance Detector",
     images: [
-      "assets/images/CMS-SubMeet.png"
+      "assets/images/CMS-SubMeet-Topic-1.png",
+      "assets/images/CMS-SubMeet-Topic-2.png"
     ],
     desc: "Topic relevance detection service integrated into the SubMeet CMS.",
     role: "Backend developer",
-    stack: ["FastAPI"],
+    stack: ["FastAPI", "Conference Management System", "REST API", "Laravel", "PostgreSQL", "Docker", "GitLab", "REST API", "Machine Learning", "Keras", "Python", "Text Classification"],
     highlights: "Standalone inference service consumed by an existing Laravel CMS",
     links: [
       {
@@ -110,7 +112,7 @@ const PROJECTS = {
   ormawa: {
     title: "Pengajuan Ketua ORMAWA",
     images: [
-      "assets/images/Pengajuan-Ketua-ORMAWA.png",
+      "assets/images/Pengajuan-Ketua-ORMAWA-1.png",
       "assets/images/Pengajuan-Ketua-ORMAWA-2.png",
       "assets/images/Pengajuan-Ketua-ORMAWA-3.png"
     ],
@@ -118,7 +120,16 @@ const PROJECTS = {
     role: "Fullstack developer",
     stack: ["Laravel", "PostgreSQL"],
     highlights: "Workflow automation, notifications, relational data modeling, functional testing",
-    links: []
+    links: [
+      {
+        label: "Repository",
+        url: "https://github.com/afrizaaa017/Proyek3_PengajuanORMAWA"
+      },
+      {
+        label: "Figma Design",
+        url: "https://www.figma.com/design/LiLmbbhXNwzdL6mIcH69pL/Ketua-Ormawa?node-id=0-1&t=3ij1ojLnMqbv7wRP-1"
+      }
+    ]
   },
   famroots: {
     title: "FamRoots",
@@ -127,7 +138,7 @@ const PROJECTS = {
     ],
     desc: "Family inheritance simulation exploring recursive data structures.",
     role: "Developer",
-    stack: ["Linked lists", "Non-binary trees", "Recursion"],
+    stack: ["C++", "Linked lists", "Non-binary trees", "Recursion"],
     highlights: "Search, insertion, deletion, and dynamic data management",
     links: [
       {
@@ -143,27 +154,46 @@ const PROJECTS = {
     ],
     desc: "Computer-vision experiments in face similarity, ethnicity detection, and drowsiness detection.",
     role: "Developer",
-    stack: ["Python", "model inference", "facial landmark processing"],
+    stack: ["Python", "Model Inference", "Facial Landmark Processing"],
     highlights: "Real-time driver drowsiness detection from landmark tracking",
-    links: []
+    links: [
+      {
+        label: "Repository",
+        url: ""
+      }
+    ]
   },
   posyanduku: {
     title: "PosyanduKu",
     images: [
-      "assets/images/Posyanduku-1.jpg",
-      "assets/images/Posyanduku-2.jpg",
-      "assets/images/Posyanduku-3.jpg"
+      "assets/images/PosyanduKu-1.jpg",
+      "assets/images/PosyanduKu-2.jpg",
+      "assets/images/PosyanduKu-3.jpg"
     ],
     desc: "Information system for community health-post (posyandu) data and operations.",
     role: "Fullstack developer",
-    stack: ["PHP Native", "Laravel", "MySQL"],
+    stack: ["PHP", "Laravel", "MySQL"],
     highlights: "Health-service data tracking for community operations",
-    links: []
+    links: [
+      {
+        label: "Repository",
+        url: "https://gitlab.com/posyanduku/posyanduku"
+      },
+      {
+        label: "Figma Design",
+        url: "https://www.figma.com/design/UGndjYIyUdFbbgPFklfcvy/Posyanduku?node-id=1-2&t=XWrxwp4TnpQaXIdQ-1"
+      }
+    ]
   },
   pesenin: {
     title: "Pesenin",
     images: [
-      "assets/images/Pesenin.png",
+      "assets/images/Pesenin-1.png",
+      "assets/images/Pesenin-2.png",
+      "assets/images/Pesenin-3.png",
+      "assets/images/Pesenin-4.png",
+      "assets/images/Pesenin-5.png",
+      "assets/images/Pesenin-6.png"
     ],
     desc: "Café ordering platform digitizing in-store and operational workflows.",
     role: "Software engineer intern",
@@ -230,9 +260,6 @@ function openProjectModal(key) {
       <div><dt>Highlights</dt><dd>${p.highlights}</dd></div>
       ${p.links && p.links.length > 0 ? `<div><dt>Links</dt><dd>${p.links.map(link => `<a class="modal-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label}↗</a>`).join(", ")}</dd></div>` : ''}
     </dl>
-    <div class="modal-footer">
-      <a href="" class="btn btn-primary" style="font-size: 13px; padding: 6px 14px;">Open in File Viewer</a>
-    </div>
   `;
 
   if (currentProjectImages.length > 1) {
