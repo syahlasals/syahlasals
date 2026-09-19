@@ -741,13 +741,14 @@ a {
 }
 
 .folder-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
 }
 
 .folder {
+  flex: 0 0 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
